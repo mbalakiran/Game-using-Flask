@@ -7,7 +7,9 @@ Write a HTTP-based mini game backend server application that allows users to log
 
 Deliver a zip file containing: 
 
-● A file named “app.py” in the root folder that can be executed with Python 3. ● Additional code in a folder named “src” 
+● A file named “app.py” in the root folder that can be executed with Python 3.
+
+● Additional code in a folder named “src” 
 
 ● An optional readme.txt or pdf file with thoughts and considerations about the program Note: This type of exhaustive specification is extremely rare and is only needed based on the circumstances of this test. 
 
@@ -23,7 +25,7 @@ Deliver a zip file containing:
 
 ● The application should be able to continuously run indefinitely without experiencing a crash or similar. 
 
-## 3Functional requirements 
+## 3 Functional requirements 
 
 The endpoints are described in detail below and the notation “<value>” indicates a call parameter value or a return value. 
 
@@ -33,4 +35,6 @@ The endpoints are described in detail below and the notation “<value>” indic
 
 ● Response data is to be returned as valid JSON objects. 
 
-● Users and levels are created “adhoc”, the first time they are referenced. ● Note the case capitalisation of the request string fields as well as the JSON object property names. 
+● Users and levels are created “adhoc”, the first time they are referenced. 
+
+● Note the case capitalisation of the request string fields as well as the JSON object property names. 
