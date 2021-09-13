@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Scores</h1>
+    <h2>Welcome to the Blog</h2>
+    <div>
+        <a href="{{url_for('about', username=user)}}">Profile</a>
+    </div>
+    <br>
+    <div>
+        <a href="{{ url_for('game')}}">Game</a>
+    </div>
+    <br>
+    <div>
+        <a href="{{ url_for('lscores', levels = 1)}}">level 1</a>
+    </div>
+    <br>
+    <div>
+        <a href="{{ url_for('lscores', levels = 2)}}">level 2</a>
+    </div>
+    <br>
+    <div>
+        <a href="{{ url_for('hscores', level = 1)}}">level 1 High Scores</a>
+    </div>
+    <br>
+    <div>
+        <a href="{{ url_for('hscores', level = 2)}}">level 2 High Scores</a>
+    </div>
+    <br>
+    <div>
+        <a href="{{ url_for('logout')}}">Logout</a>
+    </div>
+</body>
+</html>

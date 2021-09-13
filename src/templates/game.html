@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+</head>
+<body>
+    <h1>Play Game</h1>
+    <div>
+        <form action="" method="POST">
+            {{ form.hidden_tag() }}
+            <fieldset>
+                <legend>
+                    Login
+                </legend>
+                <div>
+                    {{ form.level.label }}
+                    {% if form.level.errors %}
+                        {{ form.username}}
+                        <div>
+                            {% for error in form.level.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.level }}
+                    {% endif %}
+                </div>
+                <br>
+                <div>
+                    {{ form.score.label }}
+                    {% if form.score.errors %}
+                        {{ form.score }}
+                        <div>
+                            {% for error in form.score.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.score }}
+                    {% endif %}
+                </div>
+                <br>
+            </fieldset>
+            <div>
+                {{ form.submit }}
+            </div>
+        </form>
+    </div>
+</body>
+</html>
